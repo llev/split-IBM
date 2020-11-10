@@ -159,7 +159,7 @@ article div {
     article {
         display: block;
         margin: 0;
-        padding: 1em;
+        padding: 1em 0 5em .4em;
     }
 
     article div {
