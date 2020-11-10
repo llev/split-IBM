@@ -159,7 +159,7 @@ article div {
     article {
         display: block;
         margin: 0;
-        padding: 0;
+        padding: 1em;
     }
 
     article div {
@@ -170,6 +170,11 @@ article div {
     div.text {
         padding: 0;
         margin: 0 auto;
+    }
+
+    blockquote {
+        padding: .8em 0 0 0.6em;
+        font-size: 1.5rem;
     }
 
 }
