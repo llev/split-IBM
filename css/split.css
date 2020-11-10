@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    background-color: #f2f4f8
+    ;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.title-bg {
+    background-color: #0043ce;
+    color: #fff;
+    padding: 2em;
+}
+.title-text {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans';
+    font-size: 6rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+
+h2 {
+    font-family: 'IBM Plex Sans';
+    font-size: 4rem;
+    font-weight: 200;
+    margin: 0;
+}
+h3 {
+    font-family: 'IBM Plex Sans';
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 0;
+}
+h5 {
+    margin-top: .9em;
+}
+
+blockquote {
+    text-indent: -0.45em;
+    font-size: 2rem;
+    margin: 0;
+  }
+  @supports ( hanging-punctuation: first) {
+    blockquote {
+      text-indent: 0;
+      hanging-punctuation: first;
+    }
+  }
+  
+  blockquote::before {
+      content: open-quote;
+  }
+  blockquote::after {
+      content: close-quote;
+  }
+  blockquote {
+      quotes: "“" "”" "‘" "’";
+  }
+
+
+
+header {
+    background-image: url(/img/tumblr_onsq6z25Ek1sh3pvuo1_r1_1280.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+header img {
+    filter: invert();
+    max-width: 0%;
+    height: 60%;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+
+article:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+article div {
+    width: 50%;
+}
+
+.text {
+    padding: 2em 4em 2em 3em;
+    background-color: #f2f4f8;
+    ;
+}
+
+.column, img {
+    padding: 0;
+}
+
+.img{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    top: 0;  
+    padding: 0 4em;
+    background-color: blue;
+}
+
+.img-1 {
+    background-image: url(/img/5ad611a67fa44c733a001676.jpg);
+}
+.img-2 {
+    padding: 0 5em;
+    background-image: url(/img/3042762-inline-i-2everything-is-designpaul-randcourtesy-of-museum-of-city-of-ny-copy.jpg);
+}
+.img-3 {
+    background-image: url(/img/tumblr_n389s9ek4s1sh3pvuo1_1280.png);
+}
+.img-4 {
+    background-image: url(/img/ibm/design-1.png);
+    background-position: left;
+}
+.img-5 {
+    background-image: url(/img/ibm/design-2.png);
+    background-position: top right;
+}
+.img-6 {
+    background-image: url(/img/Portrait.jpg);
+}
+
+@media(max-width: 800px) {
+    header {
+        width: 100vw;
+    }
+    .img {
+        width: 100%;
+        background-position: bottom;
+        padding: 1em;
+        max-height: 500px;
+    }
+    
+    article {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    article div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    div.text {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+      margin: 0 auto;
+    flex: 24.5%;
+    max-width: 24.5%;
+
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 49%;
+      max-width: 49%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
