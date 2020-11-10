@@ -158,8 +158,7 @@ article div {
     
     article {
         display: block;
-        margin: 0;
-        padding: 1em 0 5em .4em;
+        margin: 0 auto;
     }
 
     article div {
@@ -168,7 +167,7 @@ article div {
     }
 
     div.text {
-        padding: 0;
+        padding: 1em 0 5em .4em;        
         margin: 0 auto;
     }
 
